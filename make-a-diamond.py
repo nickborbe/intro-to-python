@@ -2,9 +2,13 @@ def diamond(n):
     if(n % 2 == 0 or n < 1):
         return null
 
-    result = '*'
-    for num in range(1, n):
-        for times in range(1,num):
+    result = ''
+
+    for num in range(1, n+2, 2):
+        for times in range(1, n - num/2):
+            result += ' '
+
+        for times in range(1, num+1):
             result += '*'
         
         result += '\n'
@@ -15,4 +19,4 @@ def diamond(n):
     
 
 
-print diamond(3)
+print diamond(7)
