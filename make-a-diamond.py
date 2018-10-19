@@ -4,6 +4,7 @@ def diamond(n):
 
     result = ''
     for num in range(1,n):
+        result 
         
 
     
