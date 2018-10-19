@@ -3,12 +3,20 @@ def diamond(n):
         return null
 
     result = ''
-    for num in range(1,n):
+    num = 1
+    while (num <= n):
         for times in range(1,num):
             result += '*'
+        
+        result += '\n'
+        num += 2
+     
+    return result
         
 
     
 
 
-    return "*"
+
+
+print diamond(3)
