@@ -5,7 +5,7 @@ def diamond(n):
     result = ''
 
     for num in range(1, n+2, 2):
-        for times in range(1, n - num/2):
+        for times in range(num, n):
             result += ' '
 
         for times in range(1, num+1):
@@ -31,4 +31,4 @@ def diamond(n):
     
 
 
-# print diamond(7)
+print diamognd(7)
