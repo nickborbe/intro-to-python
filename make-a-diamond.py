@@ -13,6 +13,18 @@ def diamond(n):
         
         result += '\n'
 
+    
+    for num in range(n-2, -1, -2):
+        for times in range(n - num/2 , 1, -1):
+            result += ' '
+
+        for times in range(num+1, 1, -1):
+            result += '*'
+
+        result += '\n'
+
+
+
     return result
         
 
