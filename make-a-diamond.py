@@ -31,4 +31,4 @@ def diamond(n):
     
 
 
-print diamond(7)
+# print diamond(7)
